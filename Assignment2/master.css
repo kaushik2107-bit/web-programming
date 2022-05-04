@@ -43,3 +43,12 @@ img {
   margin-left: 5px;
   margin-right: 5px;
 }
+.link a:visited {
+  color: green;
+}
+.link a:hover {
+  color: hotpink;
+}
+.link a:active {
+  color: red;
+}
