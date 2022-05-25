@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Saving Bank Account Opening Form</title>
+	<style type="text/css">
+		body {
+			margin: 30px;
+		}
+		input {
+			margin-top: 3px;
+			margin-bottom: 3px;
+		}
+		fieldset {
+			width : 60%;
+			float: left;
+		}
+		
+		.date-time {
+			float: right;
+			
+		}
+		table, tr, td {
+			border: 1px solid grey;
+
+		}
+		table {
+			width: 100%;
+
+		}
+	</style>
+</head>
+<body>
+	<center>
+		<h3>SAVING BANK ACCOUNT OPENING FORM</h3>
+		<h6>(for BASIC/SMALL SB A/c)</h6>
+	</center>
+	<hr>
+	<form class="">
+		<fieldset class="form1">
+			<legend><b>For Bank Use Only</b></legend>
+			<label>Name & Code of the Branch</label>
+			<!-- <input type="text" name="name"> -->
+			<br>
+			<label>Cust ID</label>&nbsp;&nbsp;&nbsp;
+			<input type="text" name="id">
+			<br>
+
+			<label>A/C No.</label>&nbsp;&nbsp;
+			<input type="text" name="ac">
+			<br>
+		</fieldset>
+		<br>
+		<div class="date-time">
+			<label>Date</label>&nbsp;&nbsp;
+			<input type="date" name="date">
+			<br>
+			<label>Time</label>&nbsp;&nbsp;
+			<input type="time" name="time">
+		</div>
+	</form>
+	 
+	<br><br><br><br><br><br>
+	<form>
+		<fieldset style="width: 98%">
+			<legend><b>Personal Details</b></legend>
+
+			<table>
+				<tr>
+					<td>1</td>
+					<td>Name in Full(Mr/Ms)</td>
+					<td colspan="3"><input type="name" name="fname"></td>
+					<td rowspan="4">Image</td>
+				</tr>
+
+				<tr>
+					<td>2</td>
+					<td>Father/Husband/Guardian Name</td>
+					<td colspan="3"><input type="name" name="fname"></td>
+					
+				</tr>
+
+				<tr>
+					<td>3</td>
+					<td>Gender</td>
+					<td><input type="radio" name="" checked>Male
+						<input type="radio" name="">Female
+					</td>
+					<td>Date of Birth</td>
+					<td><input type="date" name=""></td>
+					
+				</tr>
+
+				<tr>
+					<td>4</td>
+					<td>Occupation</td>
+					<td><input type="text" name="">
+					</td>
+					<td>Category</td>
+					<td><input list="category">
+					<datalist id="category">
+						<option value="Select"></option>
+						<option value="Gen"></option>
+					</datalist>
+					</td>
+					
+				</tr>
+
+
+				<tr>
+					<td>5</td>
+					<td>Marital Status</td>
+					<td colspan="2">
+						<input type="radio" name="" checked>Married
+						<input type="radio" name="">Unmarried
+						<input type="radio" name="">Widowed
+					</td>
+					<td>Signature</td>
+					<td></td>
+				</tr>
+
+			</table>
+
+		</fieldset>
+	</form>
+
+
+	<br><br><br><br><br><br>
+	<br><br><br><br><br><br>
+
+	<form>
+		<fieldset style="width: 98%">
+		<legend><b>Contact Details</b></legend>
+		<table>
+			<tr>
+				<td>Mobile No. <br>(1)</td>
+				<td><input type="number" name=""></td>
+				<td>Mobile No. <br>(2)</td>
+				<td><input type="number" name=""></td>
+				<td>Telephone/ <br>Landline</td>
+				<td><input type="number" name=""></td>
+			</tr>
+
+			<tr>
+				<td>Personal <br>Email</td>
+				<td colspan="2"><input type="number" name=""></td>
+				<td>Professional Email</td>
+				<td colspan="2"><input type="number" name=""></td>
+				
+			</tr>
+
+			<tr>
+				<td rowspan="2">Current Address</td>
+				<td rowspan="2"><textarea></textarea></td>
+				<td>Village/ <br> City</td>
+				<td><input type="text" name=""></td>
+				<td>District</td>
+				<td><input type="text" name=""></td>
+			</tr>
+			<tr>
+				<td>State</td>
+				<td><input list="category">
+					<datalist id="category">
+						<option value="Select"></option>
+						<option value="Gen"></option>
+					</datalist>
+				</td>
+				<td>Pincode</td>
+				<td><input type="number" name=""></td>
+			</tr>
+		</table>
+		<br>
+		<table>
+			<tr>
+				<td rowspan="2">Permanent<br> Address</td>
+				<td rowspan="2"><textarea></textarea></td>
+				<td>Village/ <br> City</td>
+				<td><input type="text" name=""></td>
+				<td>District</td>
+				<td><input type="text" name=""></td>
+			</tr>
+
+			<tr>
+				<td>State</td>
+				<td><input list="category">
+					<datalist id="category">
+						<option value="Select"></option>
+						<option value="Gen"></option>
+					</datalist>
+				</td>
+				<td>Pincode</td>
+				<td><input type="number" name=""></td>
+			</tr>
+		</table>
+	</fieldset>
+	</form>
+</body>
+</html>
