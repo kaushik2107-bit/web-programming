@@ -3,30 +3,21 @@
 <head>
 	<title>Saving Bank Account Opening Form</title>
 	<style type="text/css">
-		body {
-			margin: 30px;
-		}
-		input {
-			margin-top: 3px;
-			margin-bottom: 3px;
-		}
-		fieldset {
-			width : 60%;
-			float: left;
-		}
-		
-		.date-time {
-			float: right;
-			
-		}
-		table, tr, td {
-			border: 1px solid grey;
+    body {
+      margin-left: 70px;
+      margin-right:70px;
+    }
+    table,td {
+      border: 1px solid grey;
+      padding: 5px;
+    }
+    table {
+      width: 100%;
+    }
+    select {
+      width: 100%;
+    }
 
-		}
-		table {
-			width: 100%;
-
-		}
 	</style>
 </head>
 <body>
@@ -35,31 +26,33 @@
 		<h6>(for BASIC/SMALL SB A/c)</h6>
 	</center>
 	<hr>
-	<form class="">
-		<fieldset class="form1">
-			<legend><b>For Bank Use Only</b></legend>
-			<label>Name & Code of the Branch</label>
-			<!-- <input type="text" name="name"> -->
-			<br>
-			<label>Cust ID</label>&nbsp;&nbsp;&nbsp;
-			<input type="text" name="id">
-			<br>
 
-			<label>A/C No.</label>&nbsp;&nbsp;
-			<input type="text" name="ac">
-			<br>
-		</fieldset>
-		<br>
-		<div class="date-time">
+	<table style="border:none;">
+  	 <tr><td style="border:none;">	<fieldset class="form1">
+  			<legend><b>For Bank Use Only</b></legend>
+  			<label>Name & Code of the Branch</label>
+  			<!-- <input type="text" name="name"> -->
+  			<br>
+  			<label>Cust ID</label>&nbsp;&nbsp;&nbsp;
+  			<input type="text" name="id">
+  			<br>
+
+  			<label>A/C No.</label>&nbsp;&nbsp;
+  			<input type="text" name="ac">
+  			<br>
+  		</fieldset>
+    </td>
+	   <td style="border:none;float:right;">
+		<br><div class="date-time">
 			<label>Date</label>&nbsp;&nbsp;
 			<input type="date" name="date">
 			<br>
 			<label>Time</label>&nbsp;&nbsp;
 			<input type="time" name="time">
 		</div>
-	</form>
-	 
-	<br><br><br><br><br><br>
+  </td></tr>
+	</table>
+  <br>
 	<form>
 		<fieldset style="width: 98%">
 			<legend><b>Personal Details</b></legend>
@@ -76,7 +69,7 @@
 					<td>2</td>
 					<td>Father/Husband/Guardian Name</td>
 					<td colspan="3"><input type="name" name="fname"></td>
-					
+
 				</tr>
 
 				<tr>
@@ -87,7 +80,7 @@
 					</td>
 					<td>Date of Birth</td>
 					<td><input type="date" name=""></td>
-					
+
 				</tr>
 
 				<tr>
@@ -96,13 +89,13 @@
 					<td><input type="text" name="">
 					</td>
 					<td>Category</td>
-					<td><input list="category">
-					<datalist id="category">
-						<option value="Select"></option>
-						<option value="Gen"></option>
-					</datalist>
+					<td>
+            <select id="category" style="width:125px;">
+						  <option value="Select" selected="selected" >Select</option>
+						  <option value="Gen">Gen</option>
+            </select>
 					</td>
-					
+
 				</tr>
 
 
@@ -114,7 +107,7 @@
 						<input type="radio" name="">Unmarried
 						<input type="radio" name="">Widowed
 					</td>
-					<td>Signature</td>
+					<td style="text-align:right;">Signature</td>
 					<td></td>
 				</tr>
 
@@ -124,8 +117,7 @@
 	</form>
 
 
-	<br><br><br><br><br><br>
-	<br><br><br><br><br><br>
+	<br>
 
 	<form>
 		<fieldset style="width: 98%">
@@ -133,39 +125,39 @@
 		<table>
 			<tr>
 				<td>Mobile No. <br>(1)</td>
-				<td><input type="number" name=""></td>
+				<td><input type="number"  style="width:125px;"></td>
 				<td>Mobile No. <br>(2)</td>
-				<td><input type="number" name=""></td>
+				<td><input type="number" name="" style="width:125px;"></td>
 				<td>Telephone/ <br>Landline</td>
-				<td><input type="number" name=""></td>
+				<td><input type="number" name="" style="width:125px;"></td>
 			</tr>
 
 			<tr>
 				<td>Personal <br>Email</td>
-				<td colspan="2"><input type="number" name=""></td>
+				<td colspan="2"><input type="number" name="" style="width:125px;"></td>
 				<td>Professional Email</td>
-				<td colspan="2"><input type="number" name=""></td>
-				
+				<td colspan="2"><input type="number" name="" style="width:125px;"></td>
+
 			</tr>
 
 			<tr>
 				<td rowspan="2">Current Address</td>
 				<td rowspan="2"><textarea></textarea></td>
 				<td>Village/ <br> City</td>
-				<td><input type="text" name=""></td>
+				<td><input type="text" name="" style="width:125px;"></td>
 				<td>District</td>
-				<td><input type="text" name=""></td>
+				<td><input type="text" name="" style="width:125px;"></td>
 			</tr>
 			<tr>
 				<td>State</td>
-				<td><input list="category">
-					<datalist id="category">
-						<option value="Select"></option>
-						<option value="Gen"></option>
-					</datalist>
+				<td><select id="state">
+
+						<option value="Select">Select</option>
+						<option value="Gujarat">Gujarat</option>
+					</select>
 				</td>
 				<td>Pincode</td>
-				<td><input type="number" name=""></td>
+				<td><input type="number" name="" style="width:125px;"></td>
 			</tr>
 		</table>
 		<br>
@@ -174,24 +166,69 @@
 				<td rowspan="2">Permanent<br> Address</td>
 				<td rowspan="2"><textarea></textarea></td>
 				<td>Village/ <br> City</td>
-				<td><input type="text" name=""></td>
+				<td><input type="text" name="" style="width:125px;"></td>
 				<td>District</td>
-				<td><input type="text" name=""></td>
+				<td><input type="text" name="" style="width:125px;"></td>
 			</tr>
 
 			<tr>
 				<td>State</td>
-				<td><input list="category">
-					<datalist id="category">
-						<option value="Select"></option>
-						<option value="Gen"></option>
-					</datalist>
+				<td><select id="state">
+
+						<option value="Select">Select</option>
+						<option value="Gujarat">Gujarat</option>
+					</select>
 				</td>
 				<td>Pincode</td>
-				<td><input type="number" name=""></td>
+				<td><input type="number" name="" style="width:125px;"></td>
 			</tr>
 		</table>
 	</fieldset>
 	</form>
+
+  <br>
+
+  <form>
+		<fieldset style="width: 98%">
+		<legend><b>Documents</b></legend>
+    <table>
+      <tr>
+        <td>Aadhar <br> Card</td>
+        <td><input type='text' placeholder="Aadhar Number"></td>
+        <td><input type=file style="width:100%"></td>
+        <td>PAN<br>Card</td>
+        <td><input type=text placeholder="PAN Number"></td>
+        <td><input type=file style="width:100%"></td>
+      </tr>
+      <tr>
+        <td>Electricity<br> Bill</td>
+        <td colspan="2"><input type=file></td>
+        <td>GAS <br> Bill</td>
+        <td colspan="2"><input type=file></td>
+      </tr>
+    </table>
+	</fieldset>
+	</form>
+  <br>
+  <hr>
+
+  <p>Please open a Savings Bank account in the name of Mr./Ms. <input type=text style="border:none; border-bottom:1px solid grey;">.
+  <br></p>
+  <p>The Saving Bank rules and regulations including those relating to Small Account have been explained to me and I agree to abide by the same. An additional<br> photograph is attached.<br>
+  <br></p>
+  <table style="border:none;">
+    <tr>
+
+      <td style="border:none">
+        Date &nbsp;&nbsp;&nbsp;&nbsp; <input type="date" name="" value="">
+      </td>
+      <td class="" style="border:none">
+        Place &nbsp;&nbsp;&nbsp;&nbsp; <input type="text" name="" value="">
+      </td>
+      <td class="" style="border:none">
+        Signature
+      </td>
+    </tr>
+  </table>
 </body>
 </html>
